@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="#">
+    <meta name="description" content="#">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="wrapper">
+
+            <div class="header__message">
+                <div class="header__icon icon-clock"></div>
+                <div class="header__text">Для доставки на завтра, заказ необходимо сделать сегодня до 14:00</div>
+            </div>
+
+            <div class="header__user-menu user-menu">
+
+                <a href="login.html" class="user-menu__link">
+                    <span class="user-menu__icon icon-user"></span>
+                    <span class="user-menu__text">Вход</span>
+                </a>
+
+                <a href="basket.html" class="user-menu__link">
+                    <span class="user-menu__icon icon-basket"></span>
+                    <span class="user-menu__text">Корзина</span>
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="wrapper">
+
+            <div class="main__food-menu tab-food">
+
+                <div class="tab-food__wrapper">
+                            
+                        <input type="radio" name="tab" id="tab1" checked>
+                        <label class="tab-food__tab-label button button--transparent" for="tab1" nth="1">Первое</label>
+                        <div class="tab-food__tab-item" id="tab-content1">
+                            
+                            <div class="tab-food__item food-item">
+                                <div class="food-item__container-image container-image" style="background-image: url(images/food1.jpg);">
+                                    <img src="images/food1.jpg" alt="#" class="container-image__image">
+                                </div>
+
+                                <div class="food-item__body">
+                                    <div class="food-item__info">
+                                        <h2 class="food-item__title">Борщ</h2>
+                                        <div class="food-item__priсe priсe">
+                                            <span class="price__tag">65</span>
+                                            <span class="priсe__icon icon-currency"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="food-item__counter counter">
+                                        <form class="counter__form">
+                                            <button class="counter__button counter__button--minus" type="submit" onClick="textb.value = (textb.value-1); validate(event);"></button>
+                                            <input class="counter__result" type="text" id="textb" name="name" value="0" onkeypress="validate(event)">
+                                            <button class="counter__button counter__button--plus" type="button" onClick="textb.value = (+textb.value+1); validate(event);"></button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-food__item food-item">
+                                <div class="food-item__container-image container-image" style="background-image: url(images/food2.jpg);">
+                                    <img src="images/food2.jpg" alt="#" class="container-image__image">
+                                </div>
+
+                                <div class="food-item__body">
+                                    <div class="food-item__info">
+                                        <h2 class="food-item__title">Куриный суп</h2>
+                                        <div class="food-item__priсe priсe">
+                                            <span class="price__tag">50</span>
+                                            <span class="icon-currency"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="food-item__counter counter">
+                                        <form class="counter__form">
+                                            <button class="counter__button counter__button--minus" type="submit" onClick="textb.value = (textb.value-1); validate(event);"></button>
+                                            <input class="counter__result" type="text" id="textb" name="name" value="0" onkeypress="validate(event)">
+                                            <button class="counter__button counter__button--plus" type="button" onClick="textb.value = (+textb.value+1); validate(event);"></button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-food__item food-item">
+                                <div class="food-item__container-image container-image" style="background-image: url(images/food3.jpg);">
+                                    <img src="images/food3.jpg" alt="#" class="container-image__image">
+                                </div>
+
+                                <div class="food-item__body">
+                                    <div class="food-item__info">
+                                        <h2 class="food-item__title">Харчо</h2>
+                                        <div class="food-item__priсe priсe">
+                                            <span class="price__tag">90</span>
+                                            <span class="icon-currency"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="food-item__counter counter">
+                                        <form class="counter__form">
+                                            <button class="counter__button counter__button--minus" type="submit" onClick="textb.value = (textb.value-1); validate(event);"></button>
+                                            <input class="counter__result" type="text" id="textb" name="name" value="0" onkeypress="validate(event)">
+                                            <button class="counter__button counter__button--plus" type="button" onClick="textb.value = (+textb.value+1); validate(event);"></button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-food__item food-item">
+                                <div class="food-item__container-image container-image" style="background-image: url(images/food4.jpg);">
+                                    <img src="images/food4.jpg" alt="#" class="container-image__image">
+                                </div>
+
+                                <div class="food-item__body">
+                                    <div class="food-item__info">
+                                        <h2 class="food-item__title">Грибной крем суп</h2>
+                                        <div class="food-item__priсe priсe">
+                                            <span class="price__tag">100</span>
+                                            <span class="icon-currency"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="food-item__counter counter">
+                                        <form class="counter__form">
+                                            <button class="counter__button counter__button--minus" type="submit" onClick="textb.value = (textb.value-1); validate(event);"></button>
+                                            <input class="counter__result" type="text" id="textb" name="name" value="0" onkeypress="validate(event)">
+                                            <button class="counter__button counter__button--plus" type="button" onClick="textb.value = (+textb.value+1); validate(event);"></button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-food__item food-item">
+                                <div class="food-item__container-image container-image" style="background-image: url(images/food5.jpg);">
+                                    <img src="images/food5.jpg" alt="#" class="container-image__image">
+                                </div>
+
+                                <div class="food-item__body">
+                                    <div class="food-item__info">
+                                        <h2 class="food-item__title">Тыквенный крем суп</h2>
+                                        <div class="food-item__priсe priсe">
+                                            <span class="price__tag">85</span>
+                                            <span class="icon-currency"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="food-item__counter counter">
+                                        <form class="counter__form">
+                                            <button class="counter__button counter__button--minus" type="submit" onClick="textb.value = (textb.value-1); validate(event);"></button>
+                                            <input class="counter__result" type="text" id="textb" name="name" value="0" onkeypress="validate(event)">
+                                            <button class="counter__button counter__button--plus" type="button" onClick="textb.value = (+textb.value+1); validate(event);"></button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-food__item food-item">
+                                <div class="food-item__container-image container-image" style="background-image: url(images/food6.jpg);">
+                                    <img src="images/food6.jpg" alt="#" class="container-image__image">
+                                </div>
+
+                                <div class="food-item__body">
+                                    <div class="food-item__info">
+                                        <h2 class="food-item__title">Щи</h2>
+                                        <div class="food-item__priсe priсe">
+                                            <span class="price__tag">45</span>
+                                            <span class="icon-currency"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="food-item__counter counter">
+                                        <form class="counter__form">
+                                            <button class="counter__button counter__button--minus" type="submit" onClick="textb.value = (textb.value-1); validate(event);"></button>
+                                            <input class="counter__result" type="text" id="textb" name="name" value="0" onkeypress="validate(event)">
+                                            <button class="counter__button counter__button--plus" type="button" onClick="textb.value = (+textb.value+1); validate(event);"></button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-food__item food-item">
+                                <div class="food-item__container-image container-image" style="background-image: url(images/food7.jpg);">
+                                    <img src="images/food7.jpg" alt="#" class="container-image__image">
+                                </div>
+
+                                <div class="food-item__body">
+                                    <div class="food-item__info">
+                                        <h2 class="food-item__title">Уха</h2>
+                                        <div class="food-item__priсe priсe">
+                                            <span class="price__tag">70</span>
+                                            <span class="icon-currency"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="food-item__counter counter">
+                                        <form class="counter__form">
+                                            <button class="counter__button counter__button--minus" type="submit" onClick="textb.value = (textb.value-1); validate(event);"></button>
+                                            <input class="counter__result" type="text" id="textb" name="name" value="0" onkeypress="validate(event)">
+                                            <button class="counter__button counter__button--plus" type="button" onClick="textb.value = (+textb.value+1); validate(event);"></button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                      
+                        <input type="radio" name="tab" id="tab2">
+                        <label class="tab-food__tab-label button button--transparent" for="tab2" nth="2">Второе</label>
+                        <div class="tab-food__tab-item" id="tab-content2">
+
+                            <div class="tab-food__item food-item">
+                                <div class="food-item__container-image container-image" style="background-image: url(images/food7.jpg);">
+                                    <img src="images/food7.jpg" alt="#" class="container-image__image">
+                                </div>
+
+                                <div class="food-item__body">
+                                    <div class="food-item__info">
+                                        <h2 class="food-item__title">Уха</h2>
+                                        <div class="food-item__priсe priсe">
+                                            <span class="price__tag">70</span>
+                                            <span class="icon-currency"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="food-item__counter counter">
+                                        <form class="counter__form">
+                                            <button class="counter__button counter__button--minus" type="submit" onClick="textb.value = (textb.value-1); validate(event);"></button>
+                                            <input class="counter__result" type="text" id="textb" name="name" value="0" onkeypress="validate(event)">
+                                            <button class="counter__button counter__button--plus" type="button" onClick="textb.value = (+textb.value+1); validate(event);"></button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                      
+                        <input type="radio" name="tab" id="tab3">
+                        <label class="tab-food__tab-label button button--transparent" for="tab3" nth="3">Салаты</label>
+                        <div class="tab-food__tab-item" id="tab-content3">
+                            
+                            <div class="tab-food__item food-item">
+                                <div class="food-item__container-image container-image" style="background-image: url(images/food5.jpg);">
+                                    <img src="images/food5.jpg" alt="#" class="container-image__image">
+                                </div>
+
+                                <div class="food-item__body">
+                                    <div class="food-item__info">
+                                        <h2 class="food-item__title">Тыквенный крем суп</h2>
+                                        <div class="food-item__priсe priсe">
+                                            <span class="price__tag">85</span>
+                                            <span class="icon-currency"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="food-item__counter counter">
+                                        <form class="counter__form">
+                                            <button class="counter__button counter__button--minus" type="submit" onClick="textb.value = (textb.value-1); validate(event);"></button>
+                                            <input class="counter__result" type="text" id="textb" name="name" value="0" onkeypress="validate(event)">
+                                            <button class="counter__button counter__button--plus" type="button" onClick="textb.value = (+textb.value+1); validate(event);"></button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                      
+                        <input type="radio" name="tab" id="tab4">
+                        <label class="tab-food__tab-label button button--transparent" for="tab4" nth="4">Выпечка</label>
+                        <div class="tab-food__tab-item" id="tab-content4">
+                            
+                            <div class="tab-food__item food-item">
+                                <div class="food-item__container-image container-image" style="background-image: url(images/food4.jpg);">
+                                    <img src="images/food4.jpg" alt="#" class="container-image__image">
+                                </div>
+
+                                <div class="food-item__body">
+                                    <div class="food-item__info">
+                                        <h2 class="food-item__title">Грибной крем суп</h2>
+                                        <div class="food-item__priсe priсe">
+                                            <span class="price__tag">100</span>
+                                            <span class="icon-currency"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="food-item__counter counter">
+                                        <form class="counter__form">
+                                            <button class="counter__button counter__button--minus" type="submit" onClick="textb.value = (textb.value-1); validate(event);"></button>
+                                            <input class="counter__result" type="text" id="textb" name="name" value="0" onkeypress="validate(event)">
+                                            <button class="counter__button counter__button--plus" type="button" onClick="textb.value = (+textb.value+1); validate(event);"></button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>                            
+
+                        </div>
+                      
+                        <input type="radio" name="tab" id="tab5">
+                        <label class="tab-food__tab-label button button--transparent" for="tab5" nth="5">Напитки</label>
+                        <div class="tab-food__tab-item" id="tab-content5">
+                            
+                            <div class="tab-food__item food-item">
+                                <div class="food-item__container-image container-image" style="background-image: url(images/food4.jpg);">
+                                    <img src="images/food4.jpg" alt="#" class="container-image__image">
+                                </div>
+
+                                <div class="food-item__body">
+                                    <div class="food-item__info">
+                                        <h2 class="food-item__title">Грибной крем суп</h2>
+                                        <div class="food-item__priсe priсe">
+                                            <span class="price__tag">100</span>
+                                            <span class="icon-currency"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="food-item__counter counter">
+                                        <form class="counter__form">
+                                            <button class="counter__button counter__button--minus" type="submit" onClick="textb.value = (textb.value-1); validate(event);"></button>
+                                            <input class="counter__result" type="text" id="textb" name="name" value="0" onkeypress="validate(event)">
+                                            <button class="counter__button counter__button--plus" type="button" onClick="textb.value = (+textb.value+1); validate(event);"></button>
+                                        </form>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <a href="#header" class="footer__link-top">
+                <div class="footer__text">НАВЕРХ</div>
+                <div class="footer__icon icon-arrow-top"></div>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

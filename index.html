@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="#">
+    <meta name="description" content="#">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="wrapper">
+
+            <div class="header__message">
+                <div class="header__icon icon-clock"></div>
+                <div class="header__text">Для доставки на завтра, заказ необходимо сделать сегодня до 14:00</div>
+            </div>
+
+            <div class="header__user-menu user-menu">
+
+                <a href="login.html" class="user-menu__link">
+                    <span class="user-menu__icon icon-user"></span>
+                    <span class="user-menu__text">Вход</span>
+                </a>
+
+                <a href="basket.html" class="user-menu__link">
+                    <span class="user-menu__icon icon-basket"></span>
+                    <span class="user-menu__text">Корзина</span>
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="wrapper">
+
+            <div class="main__basket basket-page">
+
+                <a href="menu.html" class="basket-page__back back">
+                    <span class="icon-arrow-left"></span>Назад в меню
+                </a>
+
+                <h1 class="basket-page__title">Корзина</h1>
+
+                <form action="#" class="basket-page__body">
+
+                    <div class="basket-page__text">Ваш заказ</div>
+
+                    <table class="basket-page__table table">
+
+                        <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Наименование</th>
+                                <th>Кол-во</th>
+                                <th></th>
+                                <th>Цена</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td data-label="№">01</td>
+                                <td data-label="Наименование">Борщ</td>
+                                <td data-label="Кол-во" class="mobail-none">2</td>
+                                <td data-label="Кол-во">
+                                    <div class="counter__form">
+                                        <button class="counter__button counter__button--minus" type="submit" onClick="textb.value = (textb.value-1); validate(event);"></button>
+                                        <input class="counter__result" type="text" id="textb" name="name" value="2" onkeypress="validate(event)">
+                                        <button class="counter__button counter__button--plus" type="button" onClick="textb.value = (+textb.value+1); validate(event);"></button>
+                                    </div>
+                                </td>
+                                <td data-label="Цена">
+                                    <div class="table__priсe priсe">
+                                        <span class="price__tag">130</span>
+                                        <span class="icon-currency"></span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="№">02</td>
+                                <td data-label="Наименование">Щи</td>
+                                <td data-label="Кол-во" class="mobail-none">1</td>
+                                <td data-label="Кол-во">
+                                    <div class="counter__form">
+                                        <button class="counter__button counter__button--minus" type="submit" onClick="textb.value = (textb.value-1); validate(event);"></button>
+                                        <input class="counter__result" type="text" id="textb" name="name" value="1" onkeypress="validate(event)">
+                                        <button class="counter__button counter__button--plus" type="button" onClick="textb.value = (+textb.value+1); validate(event);"></button>
+                                    </div>
+                                </td>
+                                <td data-label="Цена">
+                                    <div class="table__priсe priсe">
+                                        <span class="price__tag">55</span>
+                                        <span class="icon-currency"></span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="№">03</td>
+                                <td data-label="Наименование">Спагетти Болоньезе</td>
+                                <td data-label="Кол-во" class="mobail-none">1</td>
+                                <td data-label="Кол-во">
+                                    <div class="counter__form">
+                                        <button class="counter__button counter__button--minus" type="submit" onClick="textb.value = (textb.value-1); validate(event);"></button>
+                                        <input class="counter__result" type="text" id="textb" name="name" value="1" onkeypress="validate(event)">
+                                        <button class="counter__button counter__button--plus" type="button" onClick="textb.value = (+textb.value+1); validate(event);"></button>
+                                    </div>
+                                </td>
+                                <td data-label="Цена">
+                                    <div class="table__priсe priсe">
+                                        <span class="price__tag">230</span>
+                                        <span class="icon-currency"></span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="№">04</td>
+                                <td data-label="Наименование">Круассан</td>
+                                <td data-label="Кол-во" class="mobail-none">1</td>
+                                <td data-label="Кол-во">
+                                    <div class="counter__form">
+                                        <button class="counter__button counter__button--minus" type="submit" onClick="textb.value = (textb.value-1); validate(event);"></button>
+                                        <input class="counter__result" type="text" id="textb" name="name" value="1" onkeypress="validate(event)">
+                                        <button class="counter__button counter__button--plus" type="button" onClick="textb.value = (+textb.value+1); validate(event);"></button>
+                                    </div>
+                                </td>
+                                <td data-label="Цена">
+                                    <div class="table__priсe priсe">
+                                        <span class="price__tag">85</span>
+                                        <span class="icon-currency"></span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="№">05</td>
+                                <td data-label="Наименование">Кофе Лате</td>
+                                <td data-label="Кол-во" class="mobail-none">1</td>
+                                <td data-label="Кол-во">
+                                    <div class="counter__form">
+                                        <button class="counter__button counter__button--minus" type="submit" onClick="textb.value = (textb.value-1); validate(event);"></button>
+                                        <input class="counter__result" type="text" id="textb" name="name" value="1" onkeypress="validate(event)">
+                                        <button class="counter__button counter__button--plus" type="button" onClick="textb.value = (+textb.value+1); validate(event);"></button>
+                                    </div>
+                                </td>
+                                <td data-label="Цена">
+                                    <div class="table__priсe priсe">
+                                        <span class="price__tag">120</span>
+                                        <span class="icon-currency"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                    </table>
+
+                    <div class="basket-page__total-cost total-cost">
+
+                        <div class="total-cost__info">
+
+                            <div class="total-cost__lable">Итого:</div>
+
+                            <div class="total-cost__priсe priсe priсe--total">
+                                <span class="price__tag">680</span>
+                                <span class="icon-currency"></span>
+                            </div>
+
+                        </div>
+
+                        <button class="form__button button button--login" type="submit">Оформить заказ</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <a href="#header" class="footer__link-top">
+                <div class="footer__text">НАВЕРХ</div>
+                <div class="footer__icon icon-arrow-top"></div>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
